@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.team-wrap {
+    text-align: center;
+    margin-top: 122px;
+}
+
+.team-wrap .team-thumb {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.team-thumb img {
+    transition: all 0.3s linear;
+    border-radius: 15px;
+}
+
+.team-info {
+    background-color: white;
+    margin: -80px 30px 0;
+    padding: 25px 25px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+}
+
+.team-info h4 {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.team-info h4 a {
+    color: #1a1b1e;
+}
+
+.team-wrap .team-social {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+}
+
+.team-wrap .team-social a,
+.team-wrap .team-social span {
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 12px;
+    color: white;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #00c3ff;
+    transition: all 0.3s linear;
+    border-radius: 50%;
+    box-shadow: 5px 5px 18px 0px rgba(21, 183, 236, 0.3);
+}
+
+.team-social a:hover,
+.team-social span:hover {
+    box-shadow: none;
+}
+
+.team-wrap .team-social a {
+    opacity: 0;
+    right: -40px;
+    position: relative;
+    visibility: hidden;
+}
+
+.team-wrap .team-social a:hover {
+    transform: translate(-5px);
+}
+
+.team-wrap .team-social span {
+    margin-right: 0;
+}
+
+.team-wrap .team-social.active span {
+    transform: rotate(45deg);
+    box-shadow: 5px 5px 18px 0px rgba(42, 67, 113, 0.15);
+    background: white;
+    color: #00c3ff;
+}
+
+.team-wrap .team-social.active a {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    box-shadow: 5px 5px 18px 0px rgba(42, 67, 113, 0.15);
+}
+
+.team-wrap:hover img {
+    transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+    .team-wrap {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1\/5 {
+        width: 20%;
+    }
+    .p-t200 {
+        padding-top: 200px !important;
+    }
+    .p-t150 {
+        padding-top: 150px !important;
+    }
+    .p-t100 {
+        padding-top: 100px !important;
+    }
+    .p-t50 {
+        padding-top: 60px !important;
+    }
+    .p-t40 {
+        padding-top: 40px !important;
+    }
+    .team-social .twitter {
+        background-color: #15b7ec;
+    }
+    .team-social .facebook {
+        background-color: #032733;
+    }
+    .team-social .instagram {
+        background-color: #ec15b6;
+    }
+}
